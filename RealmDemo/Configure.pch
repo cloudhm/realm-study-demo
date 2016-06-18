@@ -1,0 +1,25 @@
+//
+//  Configure.pch
+//  RealmDemo
+//
+//  Created by cloud on 6/18/16.
+//  Copyright © 2016 yedaoinc. All rights reserved.
+//
+
+#ifndef Configure_pch
+#define Configure_pch
+typedef enum {
+    Visa,
+    JBC
+}BTUIPaymentOptionType;
+typedef enum {
+    Card,
+    Paypal,
+    ApplePay
+}PaymentType;
+#import <Realm/Realm.h>
+#import "MDObject.h"
+
+
+
+#endif /* Configure_pch */
