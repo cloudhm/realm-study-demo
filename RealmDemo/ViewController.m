@@ -48,28 +48,19 @@ RLM_ARRAY_TYPE(Dog)
     [super viewDidLoad];
     RLMRealm* realm = [RLMRealm defaultRealm];
     
-    PaymentMethod* p = [[PaymentMethod alloc]init];
-    p.paymentType = Card;
-    p.cardId = @"123123";
-    p.cardCvv = @"789";
-    p.cardExpire = @"啦啦啦";
-    p.cardType = Visa;
-    
     [realm transactionWithBlock:^{
-        [realm addOrUpdateObject:p];
+        [AccountInfo createOrUpdateInRealm:realm withValue:@[@[],@[@[@0,@0,@"4111111111111111",@"321",@"1218"]],@1,@2,@3,@"cloud",@"",@"a test account"]];
     }];
     
-    RLMResults<PaymentMethod*>*result = [PaymentMethod objectsInRealm:realm where:@"cardExpire contains '啦'"];
-    NSLog(@"%@",result);
-    
-//    AccountInfo* accountInfo = [[AccountInfo alloc]init];
-//    RLMResults<PaymentMethod*>* payment = [PaymentMethod allObjects];
-//    [accountInfo.paymentMethodArr addObjects:payment];
-//    NSInteger index = [accountInfo.paymentMethodArr indexOfObject:p];
-//    if (index == NSNotFound)
-//    {
-//        [accountInfo.paymentMethodArr addObject:p];
-//    }
-    
+    RLMResults *allPayment = [PaymentMethod allObjects];
+    for (PaymentMethod* paymentMethod in allPayment)
+    {
+        NSArray *accountInfos = [paymentMethod.accountInfo valueForKeyPath:@"nickname"];
+        NSLog(@"%@ has %lu owners (%@)", paymentMethod.cardId, (unsigned long)accountInfos.count, accountInfos);
+    }
+    [realm transactionWithBlock:^{
+        [realm deleteObject:allPayment.firstObject];
+    }];
+    NSLog(@"%lu",allPayment.count);
 }
 @end

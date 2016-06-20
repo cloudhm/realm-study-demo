@@ -18,7 +18,9 @@ typedef enum {
     ApplePay
 }PaymentType;
 #import <Realm/Realm.h>
-#import "MDObject.h"
+#import "AddressInfo.h"
+#import "PaymentMethod.h"
+#import "AccountInfo.h"
 
 
 

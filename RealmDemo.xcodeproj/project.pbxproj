@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		35C28779C37A083003E2A4E7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D17267222B0585E4B439C40 /* libPods.a */; };
+		61647D1F1D16FCED00C97CA0 /* PaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 61647D1E1D16FCED00C97CA0 /* PaymentMethod.m */; };
+		61647D221D16FD1600C97CA0 /* AccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 61647D211D16FD1600C97CA0 /* AccountInfo.m */; };
+		61647D251D16FD3600C97CA0 /* AddressInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 61647D241D16FD3600C97CA0 /* AddressInfo.m */; };
 		61C891CE1D14EAE90013F772 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C891CD1D14EAE90013F772 /* main.m */; };
 		61C891D11D14EAE90013F772 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C891D01D14EAE90013F772 /* AppDelegate.m */; };
 		61C891D41D14EAE90013F772 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C891D31D14EAE90013F772 /* ViewController.m */; };
@@ -19,6 +22,12 @@
 /* Begin PBXFileReference section */
 		3D17267222B0585E4B439C40 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		610CAE5F1D15339800E0464F /* Configure.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Configure.pch; sourceTree = "<group>"; };
+		61647D1D1D16FCED00C97CA0 /* PaymentMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentMethod.h; sourceTree = "<group>"; };
+		61647D1E1D16FCED00C97CA0 /* PaymentMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentMethod.m; sourceTree = "<group>"; };
+		61647D201D16FD1600C97CA0 /* AccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountInfo.h; sourceTree = "<group>"; };
+		61647D211D16FD1600C97CA0 /* AccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountInfo.m; sourceTree = "<group>"; };
+		61647D231D16FD3600C97CA0 /* AddressInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressInfo.h; sourceTree = "<group>"; };
+		61647D241D16FD3600C97CA0 /* AddressInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressInfo.m; sourceTree = "<group>"; };
 		61C891C91D14EAE90013F772 /* RealmDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C891CD1D14EAE90013F772 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		61C891CF1D14EAE90013F772 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,8 +89,14 @@
 				61C891D21D14EAE90013F772 /* ViewController.h */,
 				61C891D31D14EAE90013F772 /* ViewController.m */,
 				610CAE5F1D15339800E0464F /* Configure.pch */,
+				61647D1D1D16FCED00C97CA0 /* PaymentMethod.h */,
+				61647D1E1D16FCED00C97CA0 /* PaymentMethod.m */,
 				61C891E31D14EBFB0013F772 /* MDObject.h */,
 				61C891E41D14EBFB0013F772 /* MDObject.m */,
+				61647D231D16FD3600C97CA0 /* AddressInfo.h */,
+				61647D241D16FD3600C97CA0 /* AddressInfo.m */,
+				61647D201D16FD1600C97CA0 /* AccountInfo.h */,
+				61647D211D16FD1600C97CA0 /* AccountInfo.m */,
 				61C891D81D14EAE90013F772 /* Assets.xcassets */,
 				61C891DA1D14EAE90013F772 /* LaunchScreen.storyboard */,
 				61C891DD1D14EAE90013F772 /* Info.plist */,
@@ -229,8 +244,11 @@
 			files = (
 				61C891D41D14EAE90013F772 /* ViewController.m in Sources */,
 				61C891E51D14EBFB0013F772 /* MDObject.m in Sources */,
+				61647D1F1D16FCED00C97CA0 /* PaymentMethod.m in Sources */,
+				61647D251D16FD3600C97CA0 /* AddressInfo.m in Sources */,
 				61C891D11D14EAE90013F772 /* AppDelegate.m in Sources */,
 				61C891CE1D14EAE90013F772 /* main.m in Sources */,
+				61647D221D16FD1600C97CA0 /* AccountInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
