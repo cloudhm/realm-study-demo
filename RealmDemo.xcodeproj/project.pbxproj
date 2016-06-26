@@ -11,6 +11,7 @@
 		61647D1F1D16FCED00C97CA0 /* PaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 61647D1E1D16FCED00C97CA0 /* PaymentMethod.m */; };
 		61647D221D16FD1600C97CA0 /* AccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 61647D211D16FD1600C97CA0 /* AccountInfo.m */; };
 		61647D251D16FD3600C97CA0 /* AddressInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 61647D241D16FD3600C97CA0 /* AddressInfo.m */; };
+		61698DCF1D2034B800E7B935 /* login_480.mov in Resources */ = {isa = PBXBuildFile; fileRef = 61698DCE1D2034B800E7B935 /* login_480.mov */; };
 		61C891CE1D14EAE90013F772 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C891CD1D14EAE90013F772 /* main.m */; };
 		61C891D11D14EAE90013F772 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C891D01D14EAE90013F772 /* AppDelegate.m */; };
 		61C891D41D14EAE90013F772 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C891D31D14EAE90013F772 /* ViewController.m */; };
@@ -28,6 +29,7 @@
 		61647D211D16FD1600C97CA0 /* AccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountInfo.m; sourceTree = "<group>"; };
 		61647D231D16FD3600C97CA0 /* AddressInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressInfo.h; sourceTree = "<group>"; };
 		61647D241D16FD3600C97CA0 /* AddressInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressInfo.m; sourceTree = "<group>"; };
+		61698DCE1D2034B800E7B935 /* login_480.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = login_480.mov; sourceTree = "<group>"; };
 		61C891C91D14EAE90013F772 /* RealmDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C891CD1D14EAE90013F772 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		61C891CF1D14EAE90013F772 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				61C891D31D14EAE90013F772 /* ViewController.m */,
 				610CAE5F1D15339800E0464F /* Configure.pch */,
 				61647D1D1D16FCED00C97CA0 /* PaymentMethod.h */,
+				61698DCE1D2034B800E7B935 /* login_480.mov */,
 				61647D1E1D16FCED00C97CA0 /* PaymentMethod.m */,
 				61C891E31D14EBFB0013F772 /* MDObject.h */,
 				61C891E41D14EBFB0013F772 /* MDObject.m */,
@@ -184,6 +187,7 @@
 			files = (
 				61C891DC1D14EAE90013F772 /* LaunchScreen.storyboard in Resources */,
 				61C891D91D14EAE90013F772 /* Assets.xcassets in Resources */,
+				61698DCF1D2034B800E7B935 /* login_480.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
